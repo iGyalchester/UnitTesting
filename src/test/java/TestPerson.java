@@ -2,7 +2,7 @@ import org.junit.Assert;
 import org.junit.Test;
 import person.Person;
 
-public class PersonTest {
+public class TestPerson {
 
 
 		@Test
@@ -13,8 +13,8 @@ public class PersonTest {
 
 			// When
 			Person person = new Person();
-			person.setName("Zara");
-			person.setAge(36);
+			person.setName("Boris");
+			person.setAge(expectedAge);
 
 			// Then
 			String actualName = person.getName();
@@ -31,7 +31,7 @@ public class PersonTest {
 
 			// When
 			Person person = new Person(expected);
-			person.setName("Alfredo");
+			person.setName("Leon");
 
 			// Then
 			String actual = person.getName();
@@ -45,7 +45,7 @@ public class PersonTest {
 
 			// When
 			Person person = new Person(expected);
-			person.setAge(15);
+			person.setAge(5);
 			// Then
 			Integer actual = person.getAge();
 			Assert.assertEquals(expected, actual);
@@ -60,8 +60,8 @@ public class PersonTest {
 
 			// When
 			Person person = new Person(expectedName, expectedAge);
-			person.setName("Rich");
-			person.setAge(56);
+			person.setName("Leon");
+			person.setAge(5);
 
 			// Then
 			Integer actualAge = person.getAge();
@@ -78,7 +78,7 @@ public class PersonTest {
 			String expected = "Leon";
 			// When
 			person.setName(expected);
-			person.setName("Raul");
+			person.setName("Leon");
 
 			String actual = person.getName();
 
@@ -95,7 +95,7 @@ public class PersonTest {
 			// When
 			person.setAge(expected);
 
-			person.setAge(21);
+			person.setAge(5);
 
 			// Then
 			Integer actual = person.getAge();
